@@ -2,10 +2,10 @@ from web3 import Web3
 import requests
 importimport time
 
-# Replace these with your own values
+
 your_private_key = "YOUR_PRIVATE_KEY"
 your_address = "YOUR_ETH_ADDRESS"
-claim_block_number = 16890400 
+claim_block_number = 16890400 #ARBITIMESTAMP
 
 
 arbiscan_api_key = ""
@@ -14,7 +14,7 @@ arbiscan_url = f"https://api.arbiscan.io/api?module=proxy&action=eth_blockNumber
 w3 = Web3(Web3.HTTPProvider(
     f"https://speedy-nodes-nyc.moralis.io/{arbiscan_api_key}/arbitrum/mainnet"))
 
-# Load the ABI of the smart contract (You'll need to replace this with the actual ABI)
+# FILL THIS WITH SMC ABI
 contract_abi = [...]
 
 
